@@ -59,6 +59,7 @@ public class HashTableOrigin {
     public void put(String key, String value) {
         int hashcode = getHashCode(key);
         int index = convertToIndex(hashcode);
+
         System.out.println( key + ", hashcode(" + hashcode + "), index(" + index + ")");
 
         LinkedList<HashNode> list = data[index];
