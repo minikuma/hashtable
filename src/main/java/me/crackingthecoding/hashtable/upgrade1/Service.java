@@ -10,7 +10,7 @@ import java.util.LinkedList;
  * @ Author  : minikuma
  * @ Date    : 2018-10-29
  * @ Version : 1.0.0
- * @ Comment :
+ * @ Comment : hash table 에 적재 및 조회 기능을 제공하는 서비스
  */
 public class Service {
 
@@ -27,10 +27,10 @@ public class Service {
 
     //put
     public void put(String key, String value) {
-        HashCodeCreator hashCodeCreator = new HashCodeCreator();
-        int index = convertToIndex(hashCodeCreator.getHashCode(key));
+        SimpleHashCodeCreator simpleHashCodeCreator = new HashCodeCreator();
+        int index = convertToIndex(simpleHashCodeCreator.getHashCode(key));
 
-        System.out.println( key + ", hashcode(" + hashCodeCreator.getHashCode(key) + "), index(" + index + ")");
+        System.out.println( key + ", hashcode(" + simpleHashCodeCreator.getHashCode(key) + "), index(" + index + ")");
 
         LinkedList<Node> list = data[index];
 
@@ -51,8 +51,10 @@ public class Service {
 
     //get
     public String get(String key) {
-        HashCodeCreator hashCodeCreator = new HashCodeCreator();
-        int index = convertToIndex(hashCodeCreator.getHashCode(key));
+        //HashCodeCreator hashCodeCreator = new HashCodeCreator();
+
+        SimpleHashCodeCreator simpleHashCodeCreator = new HashCodeCreator();
+        int index = convertToIndex(simpleHashCodeCreator.getHashCode(key));
         LinkedList<Node> list = data[index];
         Node node = searchKey(list, key);
         return node == null ? "Not Found" : node.getValue();

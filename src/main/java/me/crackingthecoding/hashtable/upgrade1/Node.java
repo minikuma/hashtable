@@ -11,7 +11,7 @@ import lombok.Setter;
  * @ Author  : minikuma
  * @ Date    : 2018-10-29
  * @ Version : 1.0.0
- * @ Comment :
+ * @ Comment : hash table (key, value) node
  */
 public class Node {
     String key;

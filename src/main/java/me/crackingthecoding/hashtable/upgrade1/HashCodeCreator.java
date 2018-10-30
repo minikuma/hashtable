@@ -10,7 +10,7 @@ package me.crackingthecoding.hashtable.upgrade1;
  * @ Version : 1.0.0
  * @ Comment : Hash Function 구현
  */
-public class HashCodeCreator {
+public class HashCodeCreator implements SimpleHashCodeCreator {
     /***
      * @ param  : String
      * @ return : int
