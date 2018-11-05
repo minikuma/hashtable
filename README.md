@@ -26,6 +26,8 @@
 
 ##### #4. 구현
 - 무턱대고 구현하기.
-- 리팩토링(Refacktoring) 해 보기.
+- 리팩토링(Refacktoring) 해 보기.   
+  1) 관심사(Hash Function code) 분리 (interface 적용)
+  2) Spring FW 적용
 
 ##### #5. 어디다 사용 해 볼 수 있나?
