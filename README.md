@@ -30,4 +30,5 @@
   1) 관심사(Hash Function code) 분리 (interface 적용)
   2) Spring FW 적용
 
-##### #5. 어디다 사용 해 볼 수 있나?
+##### #5. 어디다 사용 해 볼 수 있나?   
+- 알고리즘 문제 풀이 시, 메모이제이션 (Memoization) 기법으로 사용
